@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>proposal</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="proposal"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2015-03-27T20:02+0530"/>
+<meta name="author" content="Hanok Kodavatikanti"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">proposal</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Personal Details</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Name</a></li>
+<li><a href="#sec-1-2">1.2 Email Address</a></li>
+<li><a href="#sec-1-3">1.3 Institute</a></li>
+<li><a href="#sec-1-4">1.4 IRC nickname</a></li>
+<li><a href="#sec-1-5">1.5 Proposal</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Introduction</a></li>
+<li><a href="#sec-3">3 Software</a></li>
+<li><a href="#sec-4">4 Prototype</a></li>
+<li><a href="#sec-5">5 Timeline</a>
+<ul>
+<li><a href="#sec-5-1">5.1 Week 1</a></li>
+<li><a href="#sec-5-2">5.2 Week 2</a></li>
+<li><a href="#sec-5-3">5.3 Week 3-4</a></li>
+<li><a href="#sec-5-4">5.4 Week 5</a></li>
+<li><a href="#sec-5-5">5.5 Week 6</a></li>
+<li><a href="#sec-5-6">5.6 Week 7</a></li>
+<li><a href="#sec-5-7">5.7 Week 8-9</a></li>
+<li><a href="#sec-5-8">5.8 Week 10</a></li>
+<li><a href="#sec-5-9">5.9 Week 11</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 Convincing</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Personal Details</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Name</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>Hanok Kodavatikanti
+</p></div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Email Address</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>hanok_k92@yahoo.co.in
+</p></div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Institute</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>National Institute of Technology,Rourkela,
+India
+</p></div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> IRC nickname</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>hanok
+</p></div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Proposal</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<p>On Premise Vagrant Boxes Hosting Platform
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Introduction</h2>
+<div class="outline-text-2" id="text-2">
+
+<p>A system where a particular group of people can share their images of their working status in the vagrant boxes.This enables the people to search and download a particular image or images of a particular user.As the use cases for this system is based on the various community requirements.I would like to concentrate on the basic use cases that are essential.This is a project with lot of scope.Application can be implemented in many storage scenarios like using the personal server and proprietary cloud services.By just modifying the storage scenarios it could become the common vagrant boxes hosting management system where organisations can accomplish the collabarative work with the open source software.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Software</h2>
+<div class="outline-text-2" id="text-3">
+
+<ul>
+<li>Programming Language-Python.
+</li>
+<li>Tornado,Django-Python Web Framework.
+</li>
+<li>SQLite, SQLAlchemy-Database Operations.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Prototype</h2>
+<div class="outline-text-2" id="text-4">
+
+<p>User.py
+</p>
+
+
+<pre class="example">def Search(): 
+   /**Search the boxes by name,by backend and the by the name of the user**/ 
+
+def Delete(): 
+   /**Deletes the boxes in the user space as user requests**/ 
+
+def Edit(): 
+   /**Replacing the boxes and editing description and tags**/ 
+
+def Upload(): 
+   /**For uploading the boxes into their personal user space**/ 
+
+def Share(): 
+   /**Sharing the boxes with other user via email**/\
+
+def Download():
+   /**Download the reqired box**/ 
+</pre>
+
+
+<p>
+admin.py
+</p><ul>
+<li>Mainly deals with the user management including the user basic operation listed above.
+</li>
+</ul>
+
+
+
+
+<pre class="example">
+def DeleteUser():
+    /**Delete the user data completely**/
+
+def GrantAccess():
+    /**Approve the user to be able to use the services.**/
+
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Timeline</h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Week 1</h3>
+<div class="outline-text-3" id="text-5-1">
+
+<p>Setting up the machine and to study the vagrant docs and hacking around with vagrant to determine the potential functionality.Establishing a healthy communication with the community and the mentor in irc,mailing list etc.,
+</p></div>
+
+</div>
+
+<div id="outline-container-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Week 2</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<p>Building the Database Scheme and file system for the hosting system.
+</p></div>
+
+</div>
+
+<div id="outline-container-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Week 3-4</h3>
+<div class="outline-text-3" id="text-5-3">
+
+<p>Code operations of the user code and the admin code and some other potential use cases. 
+</p></div>
+
+</div>
+
+<div id="outline-container-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Week 5</h3>
+<div class="outline-text-3" id="text-5-4">
+
+<p>Authentication system and connecting the end points to the user interface.
+</p></div>
+
+</div>
+
+<div id="outline-container-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Week 6</h3>
+<div class="outline-text-3" id="text-5-5">
+
+<p>Deploying the application in the production server and Testing
+</p>
+<p>
+Mid-Term Evaluation:By this time basic web application will be developed
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5-6" class="outline-3">
+<h3 id="sec-5-6"><span class="section-number-3">5.6</span> Week 7</h3>
+<div class="outline-text-3" id="text-5-6">
+
+<p>Testing the application by the cloud instange members and other members of the community for the feedback for which the modifactions are done in this period
+</p></div>
+
+</div>
+
+<div id="outline-container-5-7" class="outline-3">
+<h3 id="sec-5-7"><span class="section-number-3">5.7</span> Week 8-9</h3>
+<div class="outline-text-3" id="text-5-7">
+
+<p>Working with the vagrantfile sharing feature and writing the wrappers for vagrantfile
+</p><ul>
+<li>Auto configuring of the vagrant file that is being uploaded in the application so that downloader can just vagrant up the vagrantfile.
+</li>
+<li>Scaling the application to work efficient with vagrantfile.
+</li>
+<li>Integrating the sharing VagrantFile share feature into the application. 
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-8" class="outline-3">
+<h3 id="sec-5-8"><span class="section-number-3">5.8</span> Week 10</h3>
+<div class="outline-text-3" id="text-5-8">
+
+<p>Writing the Documentation.
+</p></div>
+
+</div>
+
+<div id="outline-container-5-9" class="outline-3">
+<h3 id="sec-5-9"><span class="section-number-3">5.9</span> Week 11</h3>
+<div class="outline-text-3" id="text-5-9">
+
+<p>Project submission.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Convincing</h2>
+<div class="outline-text-2" id="text-6">
+
+<p>Last year as a part of my internship,i contributed to the <a href="http://vlead.virtual-labs.ac.in">VLEAD</a> developing a on premise automated VM hosting machine software <a href="https://github.com/vlead/ovpl  ">ovpl</a> .My role in the project was to debug the entire functional and fix the bugs,acquainting with the packages that has been used,studying the multiprocessing and deploying the application in the production server.I had some experience with web designing.These are my <a href="https://github.com/Hanokk">projects</a>. I am doing another project on University Management System this month which i planning to redirect the flow to clarify some of the challenges which i think would come up in my proposed scheme like deploying it in production server and concurrency issues.
+</p>
+<ol>
+<li>I got experience with all the packages that i am going to use like Tornado,Vagrant,etc.,
+</li>
+<li>My Daily progress and challenges faced on particular day are communicated with the mentors through irc and documenting through git.
+</li>
+</ol>
+
+
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2015-03-27T20:02+0530</p>
+<p class="author">Author: Hanok Kodavatikanti</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
