@@ -7,13 +7,13 @@ Detecting emotional information begins with passive sensors which capture data a
 
 Recognizing emotional information requires the extraction of meaningful patterns from the gathered data. This is done using machine learning techniques that process different modalities, such as speech recognition, natural language processing, or facial expression detection, and produce either labels (i.e. 'confused') or coordinates in a valence-arousal space.
 ** Emotion in machines
-Another area within affective computing is the design of computational devices proposed to exhibit either innate emotional capabilities or that are capable of convincingly simulating emotions. A more practical approach, based on current technological capabilities, is the simulation of emotions in conversational agents in order to enrich and facilitate interactivity between human and machine. While human emotions are often associated with surges in hormones and other neuropeptides, emotions in machines might be associated with abstract states associated with progress (or lack of progress) in autonomous learning systems[citation needed]. In this view, affective emotional states correspond to time-derivatives (perturbations) in the learning curve of an arbitrary learning system.[citation needed]
+Another area within affective computing is the design of computational devices proposed to exhibit either innate emotional capabilities or that are capable of convincingly simulating emotions. A more practical approach, based on current technological capabilities, is the simulation of emotions in conversational agents in order to enrich and facilitate interactivity between human and machine. While human emotions are often associated with surges in hormones and other neuropeptides, emotions in machines might be associated with abstract states associated with progress (or lack of progress) in autonomous learning systems[citation needed]. In this view, affective emotional states correspond to time-derivatives (perturbations) in the learning curve of an arbitrary learning system.
 
 * Technologies
 ** Emotional speech
 One can take advantage of the fact that changes in the autonomic nervous system indirectly alter speech, and use this information to produce systems capable of recognizing affect based on extracted features of speech. For example, speech produced in a state of fear, anger or joy becomes faster, louder, precisely enunciated with a higher and wider pitch range. Other emotions such as tiredness, boredom or sadness, lead to slower, lower-pitched and slurred speech.Emotional speech processing recognizes the user's emotional state by analyzing speech patterns. Vocal parameters and prosody features such as pitch variables and speech rate are analyzed through pattern recognition.
 
-Speech recognition is a great method of identifying affective state, having an average success rate reported in research of 63%. This result appears fairly satisfying when compared with humans¡¦ success rate at identifying emotions, but a little insufficient compared to other forms of emotion recognition (such as those which employ physiological states or facial processing). Furthermore, many speech characteristics are independent of semantics or culture, which makes this technique a very promising one to use.
+Speech recognition is a great method of identifying affective state, having an average success rate reported in research of 63%. This result appears fairly satisfying when compared with humansÂ¡Â¦ success rate at identifying emotions, but a little insufficient compared to other forms of emotion recognition (such as those which employ physiological states or facial processing). Furthermore, many speech characteristics are independent of semantics or culture, which makes this technique a very promising one to use.
 
 *** Algorithms
 The process of speech/text affect detection requires the creation of a reliable database, knowledge base, or vector space model, broad enough to fit every need for its application, as well as the selection of a successful classifier which will allow for quick and accurate emotion identification.
@@ -21,48 +21,48 @@ The process of speech/text affect detection requires the creation of a reliable 
 Currently, the most frequently used classifiers are linear discriminant classifiers (LDC), k-nearest neighbour (k-NN), Gaussian mixture model (GMM), support vector machines (SVM), artificial neural networks (ANN), decision tree algorithms and hidden Markov models (HMMs). Various studies showed that choosing the appropriate classifier can significantly enhance the overall performance of the system. The list below gives a brief description of each algorithm:
 
 
-    LDC ¡V Classification happens based on the value obtained from the linear combination of the feature values, which are usually provided in the form of vector features.
-    k-NN ¡V Classification happens by locating the object in the feature space, and comparing it with the k nearest neighbours (training examples). The majority vote decides on the classification.
-    GMM ¡V is a probabilistic model used for representing the existence of sub-populations within the overall population. Each sub-population is described using the mixture distribution, which allows for classification of observations into the sub-populations.
-    SVM ¡V is a type of (usually binary) linear classifier which decides in which of the two (or more) possible classes, each input may fall into.
-    ANN ¡V is a mathematical model, inspired by biological neural networks, that can better grasp possible non-linearities of the feature space.
-    Decision tree algorithms ¡V work based on following a decision tree in which leaves represent the classification outcome, and branches represent the conjunction of subsequent features that lead to the classification.
-    HMMs ¡V a statistical Markov model in which the states and state transitions are not directly available to observation. Instead, the series of outputs dependent on the states are visible. In the case of affect recognition, the outputs represent the sequence of speech feature vectors, which allow the deduction of states¡¦ sequences through which the model progressed. The states can consist of various intermediate steps in the expression of an emotion, and each of them has a probability distribution over the possible output vectors. The states¡¦ sequences allow us to predict the affective state which we are trying to classify, and this is one of the most commonly used techniques within the area of speech affect detection.
+    * LDC-Classification happens based on the value obtained from the linear combination of the feature values, which are usually provided in the form of vector features.
+    * k-NN-Classification happens by locating the object in the feature space, and comparing it with the k nearest neighbours (training examples). The majority vote decides on the classification.
+    * GMM -is a probabilistic model used for representing the existence of sub-populations within the overall population. Each sub-population is described using the mixture distribution, which allows for classification of observations into the sub-populations.
+    * SVM - is a type of (usually binary) linear classifier which decides in which of the two (or more) possible classes, each input may fall into.
+    * ANN - is a mathematical model, inspired by biological neural networks, that can better grasp possible non-linearities of the feature space.
+    * Decision tree algorithms Â¡V work based on following a decision tree in which leaves represent the classification outcome, and branches represent the conjunction of subsequent features that lead to the classification.
+    * HMMs - a statistical Markov model in which the states and state transitions are not directly available to observation. Instead, the series of outputs dependent on the states are visible. In the case of affect recognition, the outputs represent the sequence of speech feature vectors, which allow the deduction of statesÂ¡Â¦ sequences through which the model progressed. The states can consist of various intermediate steps in the expression of an emotion, and each of them has a probability distribution over the possible output vectors. The statesÂ¡Â¦ sequences allow us to predict the affective state which we are trying to classify, and this is one of the most commonly used techniques within the area of speech affect detection.
 *** Databases
 The vast majority of present systems are data-dependent. This creates one of the biggest challenges in detecting emotions based on speech, as it implicates choosing an appropriate database used to train the classifier. Most of the currently possessed data was obtained from actors and is thus a representation of archetypal emotions. Those so-called acted databases are usually based on the Basic Emotions theory (by Paul Ekman), which assumes the existence of six basic emotions (anger, fear, disgust, surprise, joy, sadness), the others simply being a mix of the former ones. Nevertheless, these still offer high audio quality and balanced classes (although often too few), which contribute to high success rates in recognizing emotions.
 
 However, for real life application, naturalistic data is preferred. A naturalistic database can be produced by observation and analysis of subjects in their natural context. Ultimately, such database should allow the system to recognize emotions based on their context as well as work out the goals and outcomes of the interaction. The nature of this type of data allows for authentic real life implementation, due to the fact it describes states naturally occurring during the human-computer interaction (HCI).
 
-Despite the numerous advantages which naturalistic data has over acted data, it is difficult to obtain, and usually has low emotional intensity. Moreover, data obtained in a natural context has lower signal quality, due to surroundings noise and distance of the subjects from the microphone. The first attempt to produce such database was the FAU Aibo Emotion Corpus for CEICES (Combining Efforts for Improving Automatic Classification of Emotional User States), which was developed based on a realistic context of children (age 10-13) playing with Sony¡¦s Aibo robot-pet. Likewise, producing one standard database for all emotional research would provide a method of evaluating and comparing different affect recognition systems.
+Despite the numerous advantages which naturalistic data has over acted data, it is difficult to obtain, and usually has low emotional intensity. Moreover, data obtained in a natural context has lower signal quality, due to surroundings noise and distance of the subjects from the microphone. The first attempt to produce such database was the FAU Aibo Emotion Corpus for CEICES (Combining Efforts for Improving Automatic Classification of Emotional User States), which was developed based on a realistic context of children (age 10-13) playing with SonyÂ¡Â¦s Aibo robot-pet. Likewise, producing one standard database for all emotional research would provide a method of evaluating and comparing different affect recognition systems.
 *** Speech Descriptors
 The complexity of the affect recognition process increases with the amount of classes (affects) and speech descriptors used within the classifier. It is therefore crucial to select only the most relevant features in order to assure the ability of the model to successfully identify emotions, as well as increasing the performance, which is particularly significant to real-time detection. The range of possible choices is vast; with some studies mentioning the use of over 200 distinct features. It is crucial to identify those that are redundant and undesirable in order to optimize the system, and increase the success rate of correct emotion detection. The most commonly speech characteristics are categorized in the following groups
 
     Frequency characteristics
-        Accent shape ¡V affected by the rate of change of the fundamental frequency.
-        Average pitch ¡V description of how high/low the speaker speaks relative to the normal speech.
-        Contour slope ¡V describes the tendency of the frequency change over time, it can be rising, falling or level.
-        Final lowering ¡V the amount by which the frequency falls at the end of an utterance.
-        Pitch range ¡V measures the spread between maximum and minimum frequency of an utterance.
+        + Accent shape - affected by the rate of change of the fundamental frequency.
+        + Average pitch - description of how high/low the speaker speaks relative to the normal speech.
+        + Contour slope - describes the tendency of the frequency change over time, it can be rising, falling or level
+        + Final lowering - the amount by which the frequency falls at the end of an utterance.
+        + Pitch range - measures the spread between maximum and minimum frequency of an utterance.
     Time-related features:
-        Speech rate ¡V describes the rate of words or syllables uttered over a unit of time
-        Stress frequency ¡V measures the rate of occurrences of pitch accented utterances
+        + Speech rate - describes the rate of words or syllables uttered over a unit of time
+        + Stress frequency - measures the rate of occurrences of pitch accented utterances
     Voice quality parameters and energy descriptors:
-        Breathiness ¡V measures the aspiration noise in speech
-        Brilliance ¡V describes the dominance of high Or low frequencies In the speech
-        Loudness ¡V measures the amplitude of the speech waveform, translates to the energy of an utterance
-        Pause Discontinuity ¡V describes the transitions between sound and silence
-        Pitch Discontinuity ¡V describes the transitions of fundamental frequency.
+        + Breathiness - measures the aspiration noise in speech
+        + Brilliance - describes the dominance of high Or low frequencies In the speech
+        + Loudness - measures the amplitude of the speech waveform, translates to the energy of an utterance
+        + Pause Discontinuity - describes the transitions between sound and silence
+        + Pitch Discontinuity - describes the transitions of fundamental frequency.
 ** Facial affect detection
 The detection and processing of facial expression is achieved through various methods such as optical flow, hidden Markov model, neural network processing or active appearance model. More than one modalities can be combined or fused (multimodal recognition, e.g. facial expressions and speech prosody or facial expressions and hand gestures) to provide a more robust estimation of the subject's emotional state.
 *** Emotion classification
 By doing cross-cultural research in Papua New Guinea, on the Fore Tribesmen, at the end of the 1960s Paul Ekman proposed the idea that facial expressions of emotion are not culturally determined, but universal. Thus, he suggested that they are biological in origin and can therefore be safely and correctly categorised. He therefore officially put forth six basic emotions, in 1972:
 
-    Anger
-    Disgust
-    Fear
-    Happiness
-    Sadness
-    Surprise
+    - Anger
+    - Disgust
+    - Fear
+    - Happiness
+    - Sadness
+    - Surprise
 
 However in the 1990s Ekman expanded his list of basic emotions, including a range of positive and negative emotions not all of which are encoded in facial muscles. The newly included emotions are:
 
@@ -85,20 +85,20 @@ It is generally known that the degree of accuracy in facial recognition (not aff
 Other challenges include
 
     The fact that posed expressions, as used by most subjects of the various studies, are not natural, and therefore not 100% accurate.
-    The lack of rotational movement freedom. Affect detection works very well with frontal use, but upon rotating the head more than 20 degrees, ¡§there¡¦ve been problems¡¨.
+    The lack of rotational movement freedom. Affect detection works very well with frontal use, but upon rotating the head more than 20 degrees, Â¡Â§thereÂ¡Â¦ve been problemsÂ¡Â¨.
 ** Body gesture
-Gestures could be efficiently used as a means of detecting a particular emotional state of the user, especially when used in conjunction with speech and face recognition. Depending on the specific action, gestures could be simple reflexive responses, like lifting your shoulders when you don¡¦t know the answer to a question, or they could be complex and meaningful as when communicating with sign language. Without making use of any object or surrounding environment, we can wave our hands, clap or beckon. On the other hand, when using objects, we can point at them, move, touch or handle these. A computer should be able to recognize these, analyze the context and respond in a meaningful way, in order to be efficiently used for Human-Computer Interaction.
+Gestures could be efficiently used as a means of detecting a particular emotional state of the user, especially when used in conjunction with speech and face recognition. Depending on the specific action, gestures could be simple reflexive responses, like lifting your shoulders when you donÂ¡Â¦t know the answer to a question, or they could be complex and meaningful as when communicating with sign language. Without making use of any object or surrounding environment, we can wave our hands, clap or beckon. On the other hand, when using objects, we can point at them, move, touch or handle these. A computer should be able to recognize these, analyze the context and respond in a meaningful way, in order to be efficiently used for Human-Computer Interaction.
 
 There are many proposed methods to detect the body gesture. Some literature differentiates 2 different approaches in gesture recognition: a 3D model based and an appearance-based. The foremost method makes use of 3D information of key elements of the body parts in order to obtain several important parameters, like palm position or joint angles. On the other hand, Appearance-based systems use images or videos to for direct interpretation. Hand gestures have been a common focus of body gesture detection, apparentness[vague]methods and 3-D modeling methods are traditionally used.
 
 * Potential applications
-In e-learning applications, affective computing can be used to adjust the presentation style of a computerized tutor when a learner is bored, interested, frustrated, or pleased. Psychological health services, i.e. counseling, benefit from affective computing applications when determining a client's emotional state.[citation needed]
+In e-learning applications, affective computing can be used to adjust the presentation style of a computerized tutor when a learner is bored, interested, frustrated, or pleased. Psychological health services, i.e. counseling, benefit from affective computing applications when determining a client's emotional state.
 
-Robotic systems capable of processing affective information exhibit higher flexibility while one works in uncertain or complex environments. Companion devices, such as digital pets, use affective computing abilities to enhance realism and provide a higher degree of autonomy.[citation needed]
+Robotic systems capable of processing affective information exhibit higher flexibility while one works in uncertain or complex environments. Companion devices, such as digital pets, use affective computing abilities to enhance realism and provide a higher degree of autonomy.
 
-Other potential applications are centered around social monitoring. For example, a car can monitor the emotion of all occupants and engage in additional safety measures, such as alerting other vehicles if it detects the driver to be angry.[citation needed] Affective computing has potential applications in human computer interaction, such as affective mirrors allowing the user to see how he or she performs; emotion monitoring agents sending a warning before one sends an angry email; or even music players selecting tracks based on mood.[citation needed]
+Other potential applications are centered around social monitoring. For example, a car can monitor the emotion of all occupants and engage in additional safety measures, such as alerting other vehicles if it detects the driver to be angry.[citation needed] Affective computing has potential applications in human computer interaction, such as affective mirrors allowing the user to see how he or she performs; emotion monitoring agents sending a warning before one sends an angry email; or even music players selecting tracks based on mood.
 
-One idea, put forth by the Romanian researcher Dr. Nicu Sebe in an interview, is the analysis of a person¡¦s face while they are using a certain product (he mentioned ice cream as an example). Companies would then be able to use such analysis to infer whether their product will or will not be well received by the respective market.
+One idea, put forth by the Romanian researcher Dr. Nicu Sebe in an interview, is the analysis of a personÂ¡Â¦s face while they are using a certain product (he mentioned ice cream as an example). Companies would then be able to use such analysis to infer whether their product will or will not be well received by the respective market.
 
 One could also use affective state recognition in order to judge the impact of a tv advertisement through a real-time video recording of that person and through the subsequent study of his or her facial expression. Averaging the results obtained on a large group of subjects, one can tell whether that commercial (or movie) has the desired effect and what the elements which interest the watcher most are.
 
@@ -107,7 +107,7 @@ Affective computing is also being applied to the development of communicative te
 * Critical perspectives
 Mainstream Affective Computing, as it has been characterized above, is critically discussed, e.g., within the field of Human-Computer Interaction.
 
-When Rosalind Picard coined the term 'affective computing', she outlined a cognitivist research program whose goal it is to "[...] give computers the ability to recognize, express, and in some cases, 'have' emotions". A range of researchers have criticized this research program and outlined a post-cognitivist, "interactional" perspective which, as Kirsten Boehner and collaborators suggest, "[...] take[s] emotion as a social and cultural product experienced through our interactions".They criticize the Picardian approach for its cognitivist notion of emotion that they also describe as an "information model" of emotion:
+When Rosalind Picard coined the term 'affective computing', she outlined a cognitivist research program whose goal it is to "[...] give computers the ability to recognize, express, and in some cases, 'have' emotions". A range of researchers have criticized this research program and outlined a post-cognitivist, "interactional" perspective which, as Kirsten Boehner and collaborators suggest, "[...] take emotion as a social and cultural product experienced through our interactions".They criticize the Picardian approach for its cognitivist notion of emotion that they also describe as an "information model" of emotion:
 
     Both cognition and emotion are construed here as inherently private and information-based: biopsychological events that occur entirely within the body. Like cognition, emotion can be modeled as a form of information processing, and another set of inputs to cognitive processing. This information account of emotion talks about it as a form of internal signaling, providing a context for cognitive action.
 The information model treats emotion as "objective, internal, private, and mechanistic". It reduces emotion to discrete psychological signal that are assumed to be formalizable and measurable in rather unproblematic ways.Critics of the the Picardian approach to affective computing hold that such an understanding of emotion undercuts the complexity of emotional experience.
